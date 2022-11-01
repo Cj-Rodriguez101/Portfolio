@@ -28,7 +28,7 @@
 * Datastore
 
 ## Credits
-* Mitch Tabian for overall MVI blueprint [https://github.com/mitchtabian/Food2Fork-KMM]
+* Mitch Tabian for overall MVI blueprint and FoodRecipes App [https://github.com/mitchtabian/Food2Fork-KMM]
 * PhilJay and contributors for the Chart [https://github.com/PhilJay/MPAndroidChart]
 * Jetpack Compose and Accompanist Teams
 * Figma Storyset by Freepik [https://www.figma.com/community/plugin/865232148477039928/Storyset-by-Freepik]
