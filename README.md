@@ -1,3 +1,3 @@
 # Item-Tracker-Portfolio
 
-![alt text](https://github.com/Cj-Rodriguez101/PracticeSet/blob/dae40b221a316476a3d0119b558263551de437fd/LISTDETAILSCREEN.png)
+![alt text](https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/item%20tracker%20screenshots.svg)
