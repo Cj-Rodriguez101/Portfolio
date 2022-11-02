@@ -40,9 +40,9 @@
 * Datastore
 
 ## Credits
-* Mitch Tabian for overall MVI blueprint and FoodRecipes App [https://github.com/mitchtabian/Food2Fork-KMM]
-* PhilJay and contributors for the Chart [https://github.com/PhilJay/MPAndroidChart]
+* Mitch Tabian for overall MVI blueprint and FoodRecipes App [Food2ForkKMM](https://github.com/mitchtabian/Food2Fork-KMM)
+* PhilJay and contributors for the Chart [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)
 * Jetpack Compose and Accompanist Teams
-* Figma Storyset by Freepik [https://www.figma.com/community/plugin/865232148477039928/Storyset-by-Freepik]
-* XML String Resource Translate Tool [https://androiddvlpr.com/android-xml-translate/]
-* Expandable FAB By MakeItEasyDev [https://github.com/MakeItEasyDev/Jetpack-Compose-Expand-Floating-Action-Button/tree/main/app/src/main/java/com/jetpack/expandfloatingbutton]
+* Figma Storyset by Freepik [Freepik Storyset](https://www.figma.com/community/plugin/865232148477039928/Storyset-by-Freepik)
+* XML String Resource Translate Tool [XML Translate Tool](https://androiddvlpr.com/android-xml-translate/)
+* Expandable FAB By MakeItEasyDev [Expandable FAB](https://github.com/MakeItEasyDev/Jetpack-Compose-Expand-Floating-Action-Button/tree/main/app/src/main/java/com/jetpack/expandfloatingbutton)
