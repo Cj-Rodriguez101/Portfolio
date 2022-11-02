@@ -13,7 +13,11 @@
 * Export data to excel based on report types
 
 <!-- ![alt text](https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/item%20tracker%20screenshots.svg) -->
-<img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/item%20tracker%20screenshots.svg" alt="Employee data" title="Screenshots">
+
+<div style="width:60px; height:60px; overflow-x: auto; white-space: nowrap;">
+![alt text](https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/item%20tracker%20screenshots.svg)
+<div>
+<!-- <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/item%20tracker%20screenshots.svg" alt="Employee data" title="Screenshots"> -->
 
 ## Architecture - MVI
 ## Tools
