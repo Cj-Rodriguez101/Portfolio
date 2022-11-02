@@ -12,7 +12,7 @@
 * Support for multiple languages
 * Export data to excel based on report types
 
-<table>
+<!-- <table>
   <tr>
     <td><img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/manageItemsHotspotFinal.png" width=270 height=480></td>
     <td><img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/useItemsHotspotFinal.png" width=270 height=480></td>
@@ -26,7 +26,14 @@
     <td><img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/createStoreHotspotFinal.png" width=270 height=480></td>
     <td><img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/multipleLanguagesHotspotFinal.png" width=270 height=480></td>
   </tr>
- </table>
+ </table> -->
+ 
+ <p float="left">
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/manageItemsHotspotFinal.png" width="270" height="480" />
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/useItemsHotspotFinal.png" width="270" height="480" /> 
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/approveRequestHotspotFinal.png" width="270" height="480" />
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/viewUsageHotspotFinal.png" width="270" height="480"/>
+</p>
 
 ## Architecture - MVI
 ## Tools
