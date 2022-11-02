@@ -15,7 +15,10 @@
 <!-- ![alt text](https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/item%20tracker%20screenshots.svg) -->
 
 <div style="width:60px; height:60px; overflow-x: auto; white-space: nowrap;">
-![alt text](https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/item%20tracker%20screenshots.svg)
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/manageItemsHotspotFinal.png" alt="Employee data" title="">
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/useItemsHotspotFinal.png" alt="Employee data" title="">
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/approveRequestHotspotFinal.png" alt="Employee data" title="">
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/viewUsageHotspotFinal.png" alt="Employee data" title="">
 <div>
 <!-- <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/item%20tracker%20screenshots.svg" alt="Employee data" title="Screenshots"> -->
 
