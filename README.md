@@ -28,7 +28,7 @@
   </tr>
  </table> -->
  
- <p float="left">
+ <p float="center">
   <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/manageItemsHotspotFinal.png" width="270" height="480" />
   <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/useItemsHotspotFinal.png" width="270" height="480" /> 
   <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/approveRequestHotspotFinal.png" width="270" height="480" />
