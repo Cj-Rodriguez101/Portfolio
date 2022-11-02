@@ -12,17 +12,6 @@
 * Support for multiple languages
 * Export data to excel based on report types
 
-<!-- ![alt text](https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/item%20tracker%20screenshots.svg) -->
-
-<!-- <div style="width:400px; height:60px; overflow-x: auto; white-space: nowrap;">
-  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/manageItemsHotspotFinal.png" alt="Employee data" title="">
-  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/useItemsHotspotFinal.png" alt="Employee data" title="">
-  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/approveRequestHotspotFinal.png" alt="Employee data" title="">
-  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/viewUsageHotspotFinal.png" alt="Employee data" title="">
-<div> -->
-<!-- ![](https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/manageItemsHotspotFinal.png)  |  ![](https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/useItemsHotspotFinal.png) -->
-<!-- <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/item%20tracker%20screenshots.svg" alt="Employee data" title="Screenshots"> -->
-
 <table>
   <tr>
     <td><img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/manageItemsHotspotFinal.png" width=270 height=480></td>
