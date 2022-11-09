@@ -1,4 +1,5 @@
 # Item-Tracker-Portfolio
+#### [Google Play Store Link](https://play.google.com/store/apps/details?id=com.cjRodriguez.itemTracker&pli=1)
 
 ## Track and manage items with you or with your team
 ## Features
@@ -46,3 +47,4 @@
 * Figma Storyset by Freepik [Freepik Storyset](https://www.figma.com/community/plugin/865232148477039928/Storyset-by-Freepik)
 * XML String Resource Translate Tool [XML Translate Tool](https://androiddvlpr.com/android-xml-translate/)
 * Expandable FAB By MakeItEasyDev [Expandable FAB](https://github.com/MakeItEasyDev/Jetpack-Compose-Expand-Floating-Action-Button/tree/main/app/src/main/java/com/jetpack/expandfloatingbutton)
+* Mockups [Hotpot AI](https://hotpot.ai/)  && [App Mockup](https://app-mockup.com/)
