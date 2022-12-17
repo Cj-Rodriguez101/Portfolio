@@ -17,14 +17,14 @@
  
  <p align="center"
     float="center">
-  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/manageItemsHotspotFinal.png" width="270" height="480" />
-  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/useItemsHotspotFinal.png" width="270" height="480" /> 
-  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/approveRequestHotspotFinal.png" width="270" height="480" />
-  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/viewUsageHotspotFinal.png" width="270" height="480"/>
-  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/darkModeHotspotFinal.png" width="270" height="480"/>
-  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/createReportsHotspotFinal.png" width="270" height="480"/>
-  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/createStoreHotspotFinal.png" width="270" height="480"/>
-  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/multipleLanguagesHotspotFinal.png" width="270" height="480"/>
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/createStore.png" width="270" height="480"/>
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/manageItemsAppMockup.png" width="270" height="480" />
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/useItemsAppMockup.png" width="270" height="480" /> 
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/ApproveItemsMockup.png" width="270" height="480" />
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/viewusage.png" width="270" height="480"/>
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/createReports.png" width="270" height="480"/>
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/darkMode.png" width="270" height="480"/>
+  <img src="https://github.com/Cj-Rodriguez101/Item-Tracker-Portfolio/blob/main/screenshots/multipleLanguages.png" width="270" height="480"/>
 </p>
 
 ## Architecture - MVI
