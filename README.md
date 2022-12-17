@@ -1,7 +1,7 @@
 # Item-Tracker-Portfolio
 #### [Google Play Store Link](https://play.google.com/store/apps/details?id=com.cjRodriguez.itemTracker&pli=1)
 
-## Track and manage items with you or with your team
+## Track and manage items inventory
 ## Features
 * Add categories to items to filter and segregate items
 * Create additional stores to share different items
