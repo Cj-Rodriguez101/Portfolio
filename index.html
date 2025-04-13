@@ -117,6 +117,8 @@
             overflow: hidden;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            position: relative;
         }
         
         .dark-mode .project-card {
@@ -244,6 +246,8 @@
         .project-links {
             display: flex;
             gap: 15px;
+            position: relative;
+            z-index: 2;
         }
         
         .project-links a {
@@ -323,6 +327,16 @@
             fill: currentColor;
         }
         
+        /* Card link overlay */
+        .card-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        
         @media (max-width: 768px) {
             header {
                 padding: 60px 0 40px;
@@ -382,6 +396,7 @@
             <div class="projects-grid">
                 <!-- Instant Brands -->
                 <div class="project-card">
+                    <a href="https://play.google.com/store/apps/details?id=com.instantbrands.app&hl=en" class="card-link" target="_blank"></a>
                     <div class="project-image-container">
                         <div class="project-image">
                             <img src="https://i.postimg.cc/ZnkT9G3Z/instant-screenshot.jpg" alt="Instant Brands App" onerror="this.src='https://via.placeholder.com/350x200?text=Instant+Brands'">
@@ -400,13 +415,14 @@
                             <span class="tech-tag">Real-time</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://play.google.com/store/apps/details?id=com.instantbrands.app&hl=en" class="store-link" target="_blank">Play Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.instantbrands.app&hl=en" class="store-link" target="_blank" onclick="event.stopPropagation();">Play Store</a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- OpenGem -->
                 <div class="project-card">
+                    <a href="https://github.com/Cj-Rodriguez101/Cj_ChatGPT" class="card-link" target="_blank"></a>
                     <div class="project-image-container">
                         <div class="project-image">
                             <img src="https://i.postimg.cc/gJhpPg77/opengem.jpg" alt="OpenGem App" onerror="this.src='https://via.placeholder.com/350x200?text=OpenGem'">
@@ -425,13 +441,14 @@
                             <span class="tech-tag">MediaPlayer</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Cj-Rodriguez101/Cj_ChatGPT" target="_blank">GitHub</a>
+                            <a href="https://github.com/Cj-Rodriguez101/Cj_ChatGPT" target="_blank" onclick="event.stopPropagation();">GitHub</a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Weather App -->
                 <div class="project-card">
+                    <a href="https://github.com/Cj-Rodriguez101/Weather_Forecast" class="card-link" target="_blank"></a>
                     <div class="project-image-container">
                         <div class="project-image">
                             <img src="https://i.postimg.cc/gJHMRRLJ/weather.jpg" alt="Weather App" onerror="this.src='https://via.placeholder.com/350x200?text=Weather+App'">
@@ -450,13 +467,14 @@
                             <span class="tech-tag">FusedLocation</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Cj-Rodriguez101/Weather_Forecast" target="_blank">GitHub</a>
+                            <a href="https://github.com/Cj-Rodriguez101/Weather_Forecast" target="_blank" onclick="event.stopPropagation();">GitHub</a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Item Tracker -->
                 <div class="project-card">
+                    <a href="https://play.google.com/store/apps/details?id=com.cjRodriguez.itemTracker&pli=1" class="card-link" target="_blank"></a>
                     <div class="project-image-container">
                         <div class="project-image">
                             <img src="https://i.postimg.cc/QNBmhR0C/itemtracker.jpg" alt="Item Tracker App" onerror="this.src='https://via.placeholder.com/350x200?text=Item+Tracker'">
@@ -474,13 +492,14 @@
                             <span class="tech-tag">SQL Delight</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://play.google.com/store/apps/details?id=com.cjRodriguez.itemTracker&pli=1" class="store-link" target="_blank">Play Store</a>
+                            <a href="https://play.google.com/store/apps/details?id=com.cjRodriguez.itemTracker&pli=1" class="store-link" target="_blank" onclick="event.stopPropagation();">Play Store</a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Bling Player -->
                 <div class="project-card">
+                    <a href="https://github.com/Cj-Rodriguez101/Bling_Music_Player" class="card-link" target="_blank"></a>
                     <div class="project-image-container">
                         <div class="project-image">
                             <img src="https://i.postimg.cc/GmRxP9rT/bling.jpg" alt="Bling Player App" onerror="this.src='https://via.placeholder.com/350x200?text=Bling+Player'">
@@ -498,7 +517,7 @@
                             <span class="tech-tag">Palette</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Cj-Rodriguez101/Bling_Music_Player" target="_blank">GitHub</a>
+                            <a href="https://github.com/Cj-Rodriguez101/Bling_Music_Player" target="_blank" onclick="event.stopPropagation();">GitHub</a>
                         </div>
                     </div>
                 </div>
