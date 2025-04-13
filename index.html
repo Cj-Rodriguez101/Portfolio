@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chibuike Joseph Offu Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4285F4;
+            --secondary: #34A853;
+            --dark: #202124;
+            --light: #F8F9FA;
+            --gray: #5F6368;
+            --light-gray: #DADCE0;
+            
+            /* Dark mode colors */
+            --dark-bg: #121212;
+            --dark-card: #1E1E1E;
+            --dark-text: #E8EAED;
+            --dark-secondary-text: #9AA0A6;
+            --dark-border: #333333;
+            
+            /* Image expansion variables */
+            --image-default-height: 200px;
+            --image-expanded-height: 500px;
+            --transition-timing: cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        
+        /* Dark mode class */
+        .dark-mode {
+            --primary: #669DF6;
+            --secondary: #46B956;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+            padding: 0;
+            margin: 0;
+        }
+        
+        body.dark-mode {
+            color: var(--dark-text);
+            background-color: var(--dark-bg);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+            position: relative;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+        
+        .contact-links {
+            margin-top: 30px;
+        }
+        
+        .contact-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: transform 0.3s;
+        }
+        
+        .contact-links a:hover {
+            transform: translateY(-3px);
+        }
+        
+        .projects {
+            padding: 80px 0;
+        }
+        
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .dark-mode .project-card {
+            background: var(--dark-card);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .dark-mode .project-card:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Image container with controlled height for expansion */
+        .project-image-container {
+            position: relative;
+            overflow: hidden;
+            height: var(--image-default-height);
+            transition: height 0.4s var(--transition-timing);
+            background-color: var(--light-gray);
+        }
+        
+        .dark-mode .project-image-container {
+            background-color: var(--dark-border);
+        }
+        
+        /* Image expansion on hover */
+        .project-card:hover .project-image-container {
+            height: var(--image-expanded-height);
+        }
+        
+        .project-image {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s var(--transition-timing);
+        }
+        
+        /* Subtle zoom effect when expanded */
+        .project-card:hover .project-image img {
+            transform: scale(1.05);
+        }
+        
+        /* Gradient overlay at the bottom of expanded images */
+        .project-image::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 40px;
+            background: linear-gradient(to top, rgba(0,0,0,0.2), transparent);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .project-card:hover .project-image::after {
+            opacity: 1;
+        }
+        
+        .project-content {
+            padding: 25px;
+            transition: transform 0.4s var(--transition-timing);
+        }
+        
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+        
+        .dark-mode .project-title {
+            color: var(--dark-text);
+        }
+        
+        .project-date {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-bottom: 15px;
+        }
+        
+        .dark-mode .project-date {
+            color: var(--dark-secondary-text);
+        }
+        
+        .project-description {
+            margin-bottom: 20px;
+            color: var(--gray);
+        }
+        
+        .dark-mode .project-description {
+            color: var(--dark-secondary-text);
+        }
+        
+        .tech-stack {
+            margin-bottom: 20px;
+        }
+        
+        .tech-tag {
+            display: inline-block;
+            background-color: var(--light);
+            color: var(--primary);
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .dark-mode .tech-tag {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--primary);
+        }
+        
+        .project-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .project-links a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+        
+        .project-links a:hover {
+            background-color: #3367D6;
+        }
+        
+        .dark-mode .project-links a:hover {
+            background-color: #4d7ae3;
+        }
+        
+        .project-links a.store-link {
+            background-color: var(--secondary);
+        }
+        
+        .project-links a.store-link:hover {
+            background-color: #2E9549;
+        }
+        
+        .dark-mode .project-links a.store-link:hover {
+            background-color: #3daa5c;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        
+        .dark-mode footer {
+            background-color: #000000;
+        }
+        
+        footer p {
+            opacity: 0.8;
+            font-size: 0.9rem;
+        }
+        
+        /* Theme toggle button */
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: background-color 0.3s;
+        }
+        
+        .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .theme-toggle svg {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                padding: 60px 0 40px;
+            }
+            
+            header h1 {
+                font-size: 2.2rem;
+            }
+            
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .project-card {
+                max-width: 100%;
+            }
+            
+            .theme-toggle {
+                top: 10px;
+                right: 10px;
+                padding: 8px 12px;
+                font-size: 0.8rem;
+            }
+            
+            /* Adjust expansion height for mobile */
+            :root {
+                --image-expanded-height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Offu Chibuike Joseph Portfolio</h1>
+            <p>Passionate Android developer with expertise in modern Android development using Kotlin, Jetpack Compose, and the latest architectural patterns.</p>
+            <div class="contact-links">
+                <a href="https://github.com/Cj-Rodriguez101" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/chibuike-o-b10480242/" target="_blank">LinkedIn</a>
+                <a href="mailto:chibuikeoffu@gmail.com">Email</a>
+            </div>
+        </div>
+        <button class="theme-toggle" id="themeToggle">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-12a1 1 0 0 0 1-1V2a1 1 0 0 0-2 0v2a1 1 0 0 0 1 1zm0 16a1 1 0 0 0-1 1v2a1 1 0 0 0 2 0v-2a1 1 0 0 0-1-1zm10-9h-2a1 1 0 0 0 0 2h2a1 1 0 0 0 0-2zM4 12a1 1 0 0 0-1-1H1a1 1 0 0 0 0 2h2a1 1 0 0 0 1-1zm15.7-7.7a1 1 0 0 0-1.4 0l-1.4 1.4a1 1 0 0 0 1.4 1.4l1.4-1.4a1 1 0 0 0 0-1.4zM6.3 19.7a1 1 0 0 0-1.4 0l-1.4 1.4a1 1 0 0 0 1.4 1.4l1.4-1.4a1 1 0 0 0 0-1.4zM19.7 19.7a1 1 0 0 0 0-1.4l-1.4-1.4a1 1 0 0 0-1.4 1.4l1.4 1.4a1 1 0 0 0 1.4 0zM6.3 4.3a1 1 0 0 0-1.4 1.4l1.4 1.4a1 1 0 0 0 1.4-1.4L6.3 4.3z"/>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="display: none;">
+                <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/>
+            </svg>
+            <span class="theme-text">Dark Mode</span>
+        </button>
+    </header>
+    
+    <section class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <!-- Instant Brands -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <div class="project-image">
+                            <img src="https://i.postimg.cc/ZnkT9G3Z/instant-screenshot.jpg" alt="Instant Brands App" onerror="this.src='https://via.placeholder.com/350x200?text=Instant+Brands'">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Instant Brands</h3>
+                        <p class="project-date">08/2023 - Present</p>
+                        <p class="project-description">App enabling smart control of appliances with real-time monitoring.</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">IOT</span>
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Native</span>
+                            <span class="tech-tag">Android</span>
+                            <span class="tech-tag">BLE</span>
+                            <span class="tech-tag">Real-time</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.instantbrands.app&hl=en" class="store-link" target="_blank">Play Store</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- OpenGem -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <div class="project-image">
+                            <img src="https://i.postimg.cc/gJhpPg77/opengem.jpg" alt="OpenGem App" onerror="this.src='https://via.placeholder.com/350x200?text=OpenGem'">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">OpenGem</h3>
+                        <p class="project-date">07/2023 - 08/2023</p>
+                        <p class="project-description">ChatGpt Clone App Using OpenAI and Gemini APIs</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">MVVM</span>
+                            <span class="tech-tag">Kotlin</span>
+                            <span class="tech-tag">Room</span>
+                            <span class="tech-tag">Datastore</span>
+                            <span class="tech-tag">MediaRecorder</span>
+                            <span class="tech-tag">MediaPlayer</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Cj-Rodriguez101/Cj_ChatGPT" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Weather App -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <div class="project-image">
+                            <img src="https://i.postimg.cc/gJHMRRLJ/weather.jpg" alt="Weather App" onerror="this.src='https://via.placeholder.com/350x200?text=Weather+App'">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather App</h3>
+                        <p class="project-date">07/2023 - 08/2023</p>
+                        <p class="project-description">Weather Application With MVP and RxJava</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">MVP</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">RxJava3</span>
+                            <span class="tech-tag">RxAndroid</span>
+                            <span class="tech-tag">Dagger</span>
+                            <span class="tech-tag">FusedLocation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Cj-Rodriguez101/Weather_Forecast" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Item Tracker -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <div class="project-image">
+                            <img src="https://i.postimg.cc/QNBmhR0C/itemtracker.jpg" alt="Item Tracker App" onerror="this.src='https://via.placeholder.com/350x200?text=Item+Tracker'">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Item Tracker</h3>
+                        <p class="project-date">08/2021 - 08/2023</p>
+                        <p class="project-description">An App To Track Items using Jetpack Compose and MVI</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">MVI</span>
+                            <span class="tech-tag">Jetpack Compose</span>
+                            <span class="tech-tag">KMM</span>
+                            <span class="tech-tag">Apache POI</span>
+                            <span class="tech-tag">SQL Delight</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://play.google.com/store/apps/details?id=com.cjRodriguez.itemTracker&pli=1" class="store-link" target="_blank">Play Store</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bling Player -->
+                <div class="project-card">
+                    <div class="project-image-container">
+                        <div class="project-image">
+                            <img src="https://i.postimg.cc/GmRxP9rT/bling.jpg" alt="Bling Player App" onerror="this.src='https://via.placeholder.com/350x200?text=Bling+Player'">
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Bling Player</h3>
+                        <p class="project-date">05/2023 - 07/2023</p>
+                        <p class="project-description">Music Player With Jetpack Compose and Media3 (Exoplayer)</p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Media3 (Exoplayer)</span>
+                            <span class="tech-tag">ContentProvider</span>
+                            <span class="tech-tag">Hilt</span>
+                            <span class="tech-tag">Datastore</span>
+                            <span class="tech-tag">Palette</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Cj-Rodriguez101/Bling_Music_Player" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year">2025</span> - Chibuike Joseph Offu Portfolio</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeText = themeToggle.querySelector('.theme-text');
+        const sunIcon = themeToggle.querySelector('.sun-icon');
+        const moonIcon = themeToggle.querySelector('.moon-icon');
+        
+        // Check for saved theme preference or use preferred color scheme
+        const savedTheme = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        
+        // Apply dark mode if saved or preferred
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+            document.body.classList.add('dark-mode');
+            themeText.textContent = 'Light Mode';
+            sunIcon.style.display = 'none';
+            moonIcon.style.display = 'block';
+        }
+        
+        // Toggle theme
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark');
+                themeText.textContent = 'Light Mode';
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            } else {
+                localStorage.setItem('theme', 'light');
+                themeText.textContent = 'Dark Mode';
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            }
+        });
+        
+        // Listen for system theme changes
+        if (window.matchMedia) {
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+                if (!localStorage.getItem('theme')) { // Only if user hasn't manually set a preference
+                    if (e.matches) {
+                        document.body.classList.add('dark-mode');
+                        themeText.textContent = 'Light Mode';
+                        sunIcon.style.display = 'none';
+                        moonIcon.style.display = 'block';
+                    } else {
+                        document.body.classList.remove('dark-mode');
+                        themeText.textContent = 'Dark Mode';
+                        sunIcon.style.display = 'block';
+                        moonIcon.style.display = 'none';
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
